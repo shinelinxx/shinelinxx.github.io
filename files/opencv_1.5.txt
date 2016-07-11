@@ -1,0 +1,32 @@
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc.hpp>
+using namespace cv;
+
+int main()
+{
+
+	// 载入并显示图片
+	Mat srcImage = imread("avatar.jpg");
+	imshow("原图", srcImage);
+
+   // 腐蚀
+	Mat dstImage;
+	Mat element = getStructuringElement(MORPH_ELLIPSE, Size(15, 15));
+	erode(srcImage, dstImage, element);
+	imshow("腐蚀结果", dstImage);
+
+	// 模糊降噪
+	blur(srcImage, dstImage, Size(10, 10));
+	imshow("模糊降噪结果", dstImage);
+
+	// 边缘检测
+	Mat edge, grayImage;
+	cvtColor(srcImage, grayImage, COLOR_BGR2GRAY);
+	blur(grayImage, edge, Size(3,3));
+	Canny(edge, edge, 3, 9, 3);
+	imshow("边缘检测结果", edge);
+
+	waitKey(0);
+	return 0;
+}

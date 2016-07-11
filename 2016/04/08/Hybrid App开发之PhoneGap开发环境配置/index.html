@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hybrid App开发之PhoneGap开发环境配置 | ShineLin&#39;s Blog</title>
+  <meta name="author" content="ShineLin">
+  
+  <meta name="description" content="计算机 生活 技巧">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Hybrid App开发之PhoneGap开发环境配置"/>
+  <meta property="og:site_name" content="ShineLin&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="ShineLin&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link href="/images/icon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-73917925-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?af666acd8ac5786cfd943a7b8e88c1ec";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">ShineLin&#39;s Blog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>归档
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>分类
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>标签
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="通过RSS订阅.">
+			  <i class="fa fa-rss"></i>RSS
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>关于我
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> Hybrid App开发之PhoneGap开发环境配置</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前没有系统学过安卓原生开发，后来接触了网页开发后在嵌入式开发课程中接触到了PhoneGap开发，发现是一种不错的开发模式，只要html+js写得足够到位就可以直逼安卓原生，虽然现在还不怎么熟练html。但还是尽量去尝试吧。<br><a id="more"></a><br>本文还是基于eclipse搭建的，虽然现在很多大牛已经转向AS了，不过感觉对于这种开发模式，安卓方面的开发比重已经大大减小了。写html和js更多还是vs或者webstorm。</p>
+<h2 id="创建Android工程"><a href="#创建Android工程" class="headerlink" title="创建Android工程"></a>创建Android工程</h2><p>这个就不细说了，一般4.4.2以下差不多了。</p>
+<h2 id="拷贝必要文件"><a href="#拷贝必要文件" class="headerlink" title="拷贝必要文件"></a>拷贝必要文件</h2><p>包括<br><a href="http://shinelin.net/files/cordova-2.9.0.jar">cordova.jar</a>(phonegap后来的称呼),放在lib中</p>
+<p><a href="http://shinelin.net/files/config.xml">res/xml/config.xml</a>配置文件，按路径放在工程中。</p>
+<h2 id="修改权限"><a href="#修改权限" class="headerlink" title="修改权限"></a>修改权限</h2><p>在AndoridMainifest中添加网络权限，一般自己做开发可以把所有权限都加入。<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.ACCESS_COARSE_LOCATION"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.ACCESS_FINE_LOCATION"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.ACCESS_NETWORK_STATE"</span> /&gt; </div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.ACCESS_WIFI_STATE"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.BROADCAST_STICKY"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.CAMERA"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.CHANGE_NETWORK_STATE"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.CHANGE_WIFI_STATE"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.FLASHLIGHT"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.GET_ACCOUNTS"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.INTERNET"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.MODIFY_AUDIO_SETTINGS"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.READ_CONTACTS"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.READ_PHONE_STATE"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.RECEIVE_SMS"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.RECORD_AUDIO"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.RECORD_VIDEO"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.VIBRATE"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.WRITE_CONTACTS"</span> /&gt;</div><div class="line">&lt;uses-permission android:<span class="built_in">name</span>=<span class="string">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</div><div class="line">&lt;uses-feature android:<span class="built_in">name</span>=<span class="string">"android.hardware.camera"</span> /&gt;</div><div class="line">&lt;uses-feature android:<span class="built_in">name</span>=<span class="string">"android.hardware.camera.autofocus"</span> /&gt;</div></pre></td></tr></table></figure></p>
+<p>这时候可以顺便把应用的标题栏去掉，这个百度一下就可以了</p>
+<h2 id="修改安卓启动界面"><a href="#修改安卓启动界面" class="headerlink" title="修改安卓启动界面"></a>修改安卓启动界面</h2><p>修改以后安卓的layout布局文件也可以不要了，具体修改是把MainActivity修改为如下代码<br><figure class="highlight scala"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> org.apache.cordova.<span class="type">DroidGap</span>;</div><div class="line"></div><div class="line"><span class="keyword">import</span> android.os.<span class="type">Bundle</span>;</div><div class="line"></div><div class="line"></div><div class="line">public <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">DroidGap</span> </span>&#123;</div><div class="line">	<span class="meta">@Override</span></div><div class="line">	public void onCreate(<span class="type">Bundle</span> savedInstanceState) &#123;</div><div class="line">		<span class="comment">// TODO Auto-generated method stub</span></div><div class="line">		<span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">		<span class="type">String</span> url = <span class="string">"http://shinelin.net"</span>;</div><div class="line">		<span class="type">String</span> tm = (url.indexOf(<span class="string">"?"</span>)&lt;<span class="number">0</span>?<span class="string">"?"</span>:<span class="string">"&amp;"</span>) + <span class="string">"tm="</span> + <span class="type">Math</span>.random();</div><div class="line">		url += tm;</div><div class="line">		<span class="keyword">super</span>.loadUrl(url);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这时候运行程序到你的手机上，就可以打开了。<br>url为你自己的网页，tm是随机数用来避免缓存。至于怎么通过插件来调用原生，在之后的实际使用中会再详解。</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/02/24/opencv学习笔记（二）--OpenCV视频操作基础/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/04/08/Hybrid App开发之PhoneGap开发环境配置/" data-title="Hybrid App开发之PhoneGap开发环境配置" data-url="http://shinelin.net/2016/04/08/Hybrid App开发之PhoneGap开发环境配置/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-04-08 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/安卓开发/">安卓开发<span>1</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/Android/">Android<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#前言"><span class="toc-article-text">前言</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#创建Android工程"><span class="toc-article-text">创建Android工程</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#拷贝必要文件"><span class="toc-article-text">拷贝必要文件</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#修改权限"><span class="toc-article-text">修改权限</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#修改安卓启动界面"><span class="toc-article-text">修改安卓启动界面</span></a></li></ol>
+		</div>
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'shinelin' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>&copy; 
+  
+	2015-
+  
+  2016 
+  
+		ShineLin
+    
+</p>
+<p>
+ 由 <a href="http://hexo.io/" target="_blank">Hexo</a> 强力驱动
+ | Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>
+</p>
+<div>
+	<p>
+		 ICP证号: <a href="http://www.miitbeian.gov.cn/">闽ICP备16000496号</a>
+	   
+	</p>
+	<p>
+		
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257474575'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257474575%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+   |  <a href="/sitemap.xml" target="_blank">SiteMap</a>
+	</p>
+</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
