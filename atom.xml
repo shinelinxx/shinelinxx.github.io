@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shinelin.net/"/>
-  <updated>2016-07-11T15:00:39.792Z</updated>
+  <updated>2016-07-11T15:03:48.882Z</updated>
   <id>http://shinelin.net/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://shinelin.net/2016/07/11/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E5%88%B0github-pages/"/>
     <id>http://shinelin.net/2016/07/11/博客迁移到github-pages/</id>
     <published>2016-07-11T14:17:08.000Z</published>
-    <updated>2016-07-11T15:00:39.792Z</updated>
+    <updated>2016-07-11T15:03:48.882Z</updated>
     
     <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;因为快要毕业了，如果再用阿里云估计也要用不起了，很早就想把博客放在github上，免费的同时访问速度也还行。&lt;/p&gt;
 &lt;h2 id=&quot;博客文章备份&quot;&gt;&lt;a href=&quot;#博客文章备份&quot; class=&quot;headerlink&quot; title=&quot;博客文章备份&quot;&gt;&lt;/a&gt;博客文章备份&lt;/h2&gt;&lt;p&gt;之前的博客是放在云主机上的，所以下到了本地。主要备份了source文件夹（文章和个人简介）、themes中的主题文件夹，和_config.yml(站点的，主题有自己)的。&lt;br&gt;不得不称赞hexo很简洁，备份没有花多少功夫。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;本地安装nodejs-git&quot;&gt;&lt;a href=&quot;#本地安装nodejs-git&quot; class=&quot;headerlink&quot; title=&quot;本地安装nodejs git&quot;&gt;&lt;/a&gt;本地安装nodejs git&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;nodejs下载地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git下载地址&lt;/a&gt;&lt;br&gt;傻瓜式安装，没有什么要注意的。&lt;/p&gt;
 &lt;h2 id=&quot;hexo安装&quot;&gt;&lt;a href=&quot;#hexo安装&quot; class=&quot;headerlink&quot; title=&quot;hexo安装&quot;&gt;&lt;/a&gt;hexo安装&lt;/h2&gt;&lt;p&gt;运行git bash&lt;br&gt;&lt;code&gt;npm install hexo -g&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;记得cd到一个你要放博客的文件夹再初始化，笔者刚开始直接hexo init，结果就初始化到&lt;code&gt;C:\Users\shinelin&lt;/code&gt;里了。 或者直接&lt;code&gt;hexo init folder&lt;/code&gt;&lt;br&gt;比如我放在了f盘，&lt;code&gt;cd f://hexo_blog&lt;/code&gt;。&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; init&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;记得cd到一个你要放博客的文件夹再初始化，笔者刚开始直接&lt;code&gt;hexo init&lt;/code&gt;，结果就初始化到&lt;code&gt;C:\Users\shinelin&lt;/code&gt;里了。 或者直接&lt;code&gt;hexo init folder&lt;/code&gt;&lt;br&gt;比如我放在了f盘，&lt;code&gt;cd f://hexo_blog&lt;/code&gt;。&lt;br&gt;&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;hexo&lt;/span&gt; init&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&quot;拷贝博客&quot;&gt;&lt;a href=&quot;#拷贝博客&quot; class=&quot;headerlink&quot; title=&quot;拷贝博客&quot;&gt;&lt;/a&gt;拷贝博客&lt;/h2&gt;&lt;p&gt;直接把原来的备份覆盖过来就行，不过中间有几个问题。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;需要安装一下feed sitemap &lt;code&gt;npm install hexo-generator-feed --save&lt;/code&gt;、&lt;code&gt;npm install hexo-generator-sitemap --save&lt;/code&gt;。&lt;/li&gt;

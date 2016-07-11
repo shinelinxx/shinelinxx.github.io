@@ -141,7 +141,7 @@ var _hmt = _hmt || [];
 <h2 id="博客文章备份"><a href="#博客文章备份" class="headerlink" title="博客文章备份"></a>博客文章备份</h2><p>之前的博客是放在云主机上的，所以下到了本地。主要备份了source文件夹（文章和个人简介）、themes中的主题文件夹，和_config.yml(站点的，主题有自己)的。<br>不得不称赞hexo很简洁，备份没有花多少功夫。<br><a id="more"></a></p>
 <h2 id="本地安装nodejs-git"><a href="#本地安装nodejs-git" class="headerlink" title="本地安装nodejs git"></a>本地安装nodejs git</h2><p><a href="https://nodejs.org/en/" target="_blank" rel="external">nodejs下载地址</a><br><a href="https://git-scm.com/downloads" target="_blank" rel="external">git下载地址</a><br>傻瓜式安装，没有什么要注意的。</p>
 <h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><p>运行git bash<br><code>npm install hexo -g</code></p>
-<p>记得cd到一个你要放博客的文件夹再初始化，笔者刚开始直接hexo init，结果就初始化到<code>C:\Users\shinelin</code>里了。 或者直接<code>hexo init folder</code><br>比如我放在了f盘，<code>cd f://hexo_blog</code>。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo</span> init</div></pre></td></tr></table></figure></p>
+<p>记得cd到一个你要放博客的文件夹再初始化，笔者刚开始直接<code>hexo init</code>，结果就初始化到<code>C:\Users\shinelin</code>里了。 或者直接<code>hexo init folder</code><br>比如我放在了f盘，<code>cd f://hexo_blog</code>。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo</span> init</div></pre></td></tr></table></figure></p>
 <h2 id="拷贝博客"><a href="#拷贝博客" class="headerlink" title="拷贝博客"></a>拷贝博客</h2><p>直接把原来的备份覆盖过来就行，不过中间有几个问题。</p>
 <ul>
 <li>需要安装一下feed sitemap <code>npm install hexo-generator-feed --save</code>、<code>npm install hexo-generator-sitemap --save</code>。</li>
