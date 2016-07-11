@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://shinelin.net/2016/07/11/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E5%88%B0github/</loc>
+    <lastmod>2016-07-11T14:54:03.510Z</lastmod>
+    <data>
+        <display>
+        <title>博客迁移到github pages</title>
+        <pubTime>2016-07-11T14:17:08.000Z</pubTime>
+        
+        <tag>blog</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境搭建" url="http://shinelin.net/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://shinelin.net/2016/02/24/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89--OpenCV%E8%A7%86%E9%A2%91%E6%93%8D%E4%BD%9C%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2016-07-11T11:21:07.424Z</lastmod>
     <data>
@@ -126,6 +148,28 @@
            
              
               <breadCrumb title="环境搭建" url="http://shinelin.net/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shinelin.net/2016/01/26/%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E5%88%B0github%20pages/</loc>
+    <lastmod>2016-07-11T11:06:35.233Z</lastmod>
+    <data>
+        <display>
+        <title>vim命令精简+中文帮助文档</title>
+        <pubTime>2016-01-26T15:20:08.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>vim</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="http://shinelin.net/categories/linux/"/>
           
         </display>
     </data>

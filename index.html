@@ -141,6 +141,28 @@ var _hmt = _hmt || [];
 	
 	<!-- display as entry -->	
 		<h3 class="title">
+			<div class="date"> 2016-07-11 </div>
+			<div class="article-title"><a href="/2016/07/11/博客迁移到github/" >博客迁移到github pages</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>因为快要毕业了，如果再用阿里云估计也要用不起了，很早就想把博客放在github上，免费的同时访问速度也还行。</p>
+<h2 id="博客文章备份"><a href="#博客文章备份" class="headerlink" title="博客文章备份"></a>博客文章备份</h2><p>之前的博客是放在云主机上的，所以下到了本地。主要备份了source文件夹（主要是文章和个人简介）、themes中的主体文件夹，和_config.yml(站点的，主题有自己)的。<br>不得不称赞hexo很简洁，备份没有花多少功夫。<br>
+	
+	</div>
+  <a type="button" href="/2016/07/11/博客迁移到github/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
 			<div class="date"> 2016-04-08 </div>
 			<div class="article-title"><a href="/2016/04/08/Hybrid App开发之PhoneGap开发环境配置/" >Hybrid App开发之PhoneGap开发环境配置</a></div>						
 		</h3>
@@ -221,28 +243,6 @@ var _hmt = _hmt || [];
 </div>
 
 		
-			
-	
-	<!-- display as entry -->	
-		<h3 class="title">
-			<div class="date"> 2016-02-17 </div>
-			<div class="article-title"><a href="/2016/02/17/php不重装配置openssl/" >php不重装配置openssl</a></div>						
-		</h3>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<p>昨天在服务器上配置了一个<a href="http://shinelin.net/sign">贴吧云签到助手</a>，在设置邮件时发现安装php时忘记配置ssl。又不想重新编译安装整个php，度娘了一下把openssl加上了。<br>我的安装目录是<code>/usr/local/php</code></p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/php-7.0.3/</span>ext<span class="regexp">/openssl/</span></div><div class="line">cp config0.m4 config.m4</div><div class="line"><span class="regexp">/usr/</span>local<span class="regexp">/php/</span>bin/phpize</div><div class="line">.<span class="regexp">/configure --with-openssl --with-php-config=/</span>usr<span class="regexp">/local/</span>php<span class="regexp">/bin/</span>php-config</div><div class="line">make &amp;&amp; make install</div></pre></td></tr></table></figure>
-	
-	</div>
-  <a type="button" href="/2016/02/17/php不重装配置openssl/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 
 		</div>
 
@@ -297,7 +297,7 @@ var _hmt = _hmt || [];
 		<h4>分类</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/linux/">linux<span>1</span></a></li>
+			<li><a href="/categories/linux/">linux<span>2</span></a></li>
 		
 			<li><a href="/categories/opencv/">opencv<span>2</span></a></li>
 		
@@ -305,7 +305,7 @@ var _hmt = _hmt || [];
 		
 			<li><a href="/categories/有感/">有感<span>1</span></a></li>
 		
-			<li><a href="/categories/环境搭建/">环境搭建<span>2</span></a></li>
+			<li><a href="/categories/环境搭建/">环境搭建<span>3</span></a></li>
 		
 		</ul>
 	</div>
@@ -316,23 +316,27 @@ var _hmt = _hmt || [];
 		<h4>标签云</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/图片处理/">图片处理<span>1</span></a></li>
+			<li><a href="/tags/图像处理/">图像处理<span>1</span></a></li>
 		
-			<li><a href="/tags/php/">php<span>2</span></a></li>
+			<li><a href="/tags/blog/">blog<span>1</span></a></li>
+		
+			<li><a href="/tags/linux/">linux<span>2</span></a></li>
+		
+			<li><a href="/tags/github/">github<span>1</span></a></li>
 		
 			<li><a href="/tags/生活/">生活<span>1</span></a></li>
 		
+			<li><a href="/tags/图片处理/">图片处理<span>1</span></a></li>
+		
 			<li><a href="/tags/Android/">Android<span>1</span></a></li>
 		
-			<li><a href="/tags/linux/">linux<span>1</span></a></li>
-		
-			<li><a href="/tags/图像处理/">图像处理<span>1</span></a></li>
+			<li><a href="/tags/php/">php<span>2</span></a></li>
 		
 			<li><a href="/tags/opencv/">opencv<span>2</span></a></li>
 		
 			<li><a href="/tags/nginx/">nginx<span>1</span></a></li>
 		
-			<li><a href="/tags/vim/">vim<span>1</span></a></li>
+			<li><a href="/tags/vim/">vim<span>2</span></a></li>
 		
 		 
 		</ul>
@@ -344,6 +348,10 @@ var _hmt = _hmt || [];
 <div class="widget">
   <h4>最新文章</h4>
   <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/2016/07/11/博客迁移到github/" ><i class="fa fa-file-o"></i>博客迁移到github pages</a>
+      </li>
     
       <li>
         <a href="/2016/04/08/Hybrid App开发之PhoneGap开发环境配置/" ><i class="fa fa-file-o"></i>Hybrid App开发之PhoneGap开发环境配置</a>
@@ -359,10 +367,6 @@ var _hmt = _hmt || [];
     
       <li>
         <a href="/2016/02/20/2016年寒假小结/" ><i class="fa fa-file-o"></i>2016年寒假小结</a>
-      </li>
-    
-      <li>
-        <a href="/2016/02/17/php不重装配置openssl/" ><i class="fa fa-file-o"></i>php不重装配置openssl</a>
       </li>
     
   </ul>
