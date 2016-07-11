@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>博客迁移到github pages | ShineLin&#39;s Blog</title>
+  <meta name="author" content="ShineLin">
+  
+  <meta name="description" content="计算机 生活 技巧">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="博客迁移到github pages"/>
+  <meta property="og:site_name" content="ShineLin&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="ShineLin&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link href="/images/icon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/themes/bootstrap.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-73917925-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?af666acd8ac5786cfd943a7b8e88c1ec";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/">ShineLin&#39;s Blog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>归档
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>分类
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>标签
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="通过RSS订阅.">
+			  <i class="fa fa-rss"></i>RSS
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>关于我
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> 博客迁移到github pages</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>因为快要毕业了，如果再用阿里云估计也要用不起了，很早就想把博客放在github上，免费的同时访问速度也还行。</p>
+<h2 id="博客文章备份"><a href="#博客文章备份" class="headerlink" title="博客文章备份"></a>博客文章备份</h2><p>之前的博客是放在云主机上的，所以下到了本地。主要备份了source文件夹（主要是文章和个人简介）、themes中的主体文件夹，和_config.yml(站点的，主题有自己)的。<br>不得不称赞hexo很简洁，备份没有花多少功夫。<br><a id="more"></a></p>
+<h2 id="本地安装nodejs-git"><a href="#本地安装nodejs-git" class="headerlink" title="本地安装nodejs git"></a>本地安装nodejs git</h2><p><a href="https://nodejs.org/en/" target="_blank" rel="external">nodejs下载地址</a><br><a href="https://git-scm.com/downloads" target="_blank" rel="external">git下载地址</a><br>傻瓜式安装，没有什么要注意的。</p>
+<h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><p>运行git bash<br><code>npm install hexo -g</code></p>
+<p>记得cd到一个你要放博客的文件夹再初始化，笔者刚开始直接hexo init，结果就初始化到<code>C:\Users\shinelin</code>里了。 或者直接hexo init <folder><br>比如我放在了f盘，<code>cd f://hexo_blog</code>。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo</span> init</div></pre></td></tr></table></figure></folder></p>
+<h2 id="拷贝博客"><a href="#拷贝博客" class="headerlink" title="拷贝博客"></a>拷贝博客</h2><p>直接把原来的备份覆盖过来就行，不过中间有几个问题。</p>
+<ul>
+<li>需要安装一下feed sitemap <code>npm install hexo-generator-feed --save</code>、<code>npm install hexo-generator-sitemap --save</code>。</li>
+<li>由于我使用了bootstrap的标签，所以要<code>npm install npm install hexo-tag-bootstrap --save</code></li>
+<li>_config.yml里面一些没有的插件给删除了，不然可能会报错。（我很奇怪我安装了feed为什么会报错。。。）</li>
+</ul>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">hexo</span> g</div><div class="line">hexo s</div><div class="line">`</div></pre></td></tr></table></figure>
+<p>浏览器可以打开了，完美～～</p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>在github上<code>Create a new repository</code><br>然后<code>Repository name</code>填写<code>你的用户名.github.io</code>,例如<code>shinelinxx.github.io</code><br>其他设置为<code>默认</code></p>
+<p>先安装部署工具<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></div></pre></td></tr></table></figure></p>
+<p>本地修改(添加)_config.yml (站点目录下的)， repository就是你源的ssh的地址，在github上复制。<br><figure class="highlight dts"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># Deployment</span></div><div class="line"><span class="meta">## Docs: http:<span class="comment">//hexo.io/docs/deployment.html</span></span></div><div class="line"><span class="symbol">deploy:</span></div><div class="line"><span class="symbol">  type:</span> git</div><div class="line"><span class="symbol">  repository:</span> git@github.com:shinelinxx/shinelinxx.github.io.git</div><div class="line"><span class="symbol">  branch:</span> master</div></pre></td></tr></table></figure></p>
+<p>这时候你会发现<code>hexo d</code>部署会提示没有权限，这是因为你需要配置ssh.</p>
+<h2 id="配置ssh"><a href="#配置ssh" class="headerlink" title="配置ssh"></a>配置ssh</h2><p>参考这篇<a href="http://blog.csdn.net/binyao02123202/article/details/20130891" target="_blank" rel="external">博客</a><br>你会发现在第四步的时候可能还是连接不上，能连上最好。<br>连不上的话，看<a href="http://blog.csdn.net/fulinus/article/details/38542439" target="_blank" rel="external">这里</a><br>里面的博主用vim编辑，在windows下你完全可以用记事本。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Host github<span class="selector-class">.com</span>  </div><div class="line">User 你的注册邮箱</div><div class="line">Hostname ssh<span class="selector-class">.github</span><span class="selector-class">.com</span>  </div><div class="line">PreferredAuthentications publickey  </div><div class="line">IdentityFile ~/.ssh/id_rsa  </div><div class="line">Port <span class="number">443</span></div></pre></td></tr></table></figure></p>
+<p>注：publickey别自作多情改成你的ssh key了，我之前就是。</p>
+<p>到这里应该就可以连接上了。<br>接着<code>hexo d</code>， 在github上刷新,好了部署上去了.<br>用shinelinxx.github.io访问，也能打开了。</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>参考了这篇<a href="http://ipytlab.com/2016/01/23/GitHub-Pages%E7%BB%91%E5%AE%9A%E9%A1%B6%E7%BA%A7%E5%9F%9F%E5%90%8D/" target="_blank" rel="external">博客</a>，确实成功了。</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p>上述几个链接，和几篇找不到的文章……</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2016/04/08/Hybrid App开发之PhoneGap开发环境配置/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/07/11/博客迁移到github-pages/" data-title="博客迁移到github pages" data-url="http://shinelin.net/2016/07/11/博客迁移到github-pages/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-07-11 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/环境搭建/">环境搭建<span>3</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/blog/">blog<span>1</span></a></li> <li><a href="/tags/github/">github<span>1</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#前言"><span class="toc-article-text">前言</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#博客文章备份"><span class="toc-article-text">博客文章备份</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#本地安装nodejs-git"><span class="toc-article-text">本地安装nodejs git</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#hexo安装"><span class="toc-article-text">hexo安装</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#拷贝博客"><span class="toc-article-text">拷贝博客</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#部署到github"><span class="toc-article-text">部署到github</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#配置ssh"><span class="toc-article-text">配置ssh</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#绑定域名"><span class="toc-article-text">绑定域名</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#参考文章"><span class="toc-article-text">参考文章</span></a></li></ol>
+		</div>
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'shinelin' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>&copy; 
+  
+	2015-
+  
+  2016 
+  
+		ShineLin
+    
+</p>
+<p>
+ 由 <a href="http://hexo.io/" target="_blank">Hexo</a> 强力驱动
+ | Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>
+</p>
+<div>
+	<p>
+		 ICP证号: <a href="http://www.miitbeian.gov.cn/">闽ICP备16000496号</a>
+	   
+	</p>
+	<p>
+		
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1257474575'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1257474575%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+   |  <a href="/sitemap.xml" target="_blank">SiteMap</a>
+	</p>
+</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>
